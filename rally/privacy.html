@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>랠리 개인정보 처리방침</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <div class="brand"><span class="dot">A</span> AIM the SPACE</div>
+  </header>
+  <section class="panel active">
+<h1>랠리 개인정보 처리방침</h1>
+<p class="updated">최종 수정일: 2026년 10월 5일</p>
+
+<p>랠리(이하 “앱”)는 대학 스포츠 동아리의 경기 기록과 대회 운영을 돕는 앱입니다.
+이 문서는 앱이 어떤 정보를 다루고, 어디에 보관하며, 어떻게 지울 수 있는지를 설명합니다.</p>
+
+<h2>1. 수집하는 정보</h2>
+
+<table>
+  <tr><th>항목</th><th>내용</th><th>수집 방법</th></tr>
+  <tr><td>회원 정보</td><td>이름, 기수, 학번, 별명(선택), 동아리 내 역할</td><td>동아리 운영진이 명단을 입력하거나 파일로 등록</td></tr>
+  <tr><td>경기 기록</td><td>일시, 장소, 참가자, 스코어, 승패, 레이팅</td><td>운영진이 앱에서 기록</td></tr>
+  <tr><td>대회 기록</td><td>대회명, 일자, 참가자, 대진, 결과</td><td>운영진이 앱에서 기록</td></tr>
+  <tr><td>계정 식별자</td><td>Apple 로그인 사용자 식별자, 이름(선택 제공)</td><td>이용자가 로그인할 때</td></tr>
+</table>
+
+<p><strong>학번은 본인 확인에만 씁니다.</strong> 동아리에 같은 이름을 가진 사람이 있을 때
+누가 누구인지 가리기 위한 용도이며, 앱 화면 어디에서도 다른 사람의 학번은 보이지 않습니다.</p>
+
+<p>앱은 위치, 연락처, 사진, 광고 식별자를 수집하지 않습니다. 광고를 게재하지 않으며,
+이용자의 정보를 제3자에게 판매하거나 광고 목적으로 제공하지 않습니다.</p>
+
+<h2>2. 정보를 쓰는 목적</h2>
+<ul>
+  <li>동아리 경기 기록의 저장과 조회</li>
+  <li>개인 전적, 상대 전적, 랭킹 산출</li>
+  <li>대회 대진 편성과 진행</li>
+  <li>로그인한 이용자가 동아리 명단의 누구인지 확인</li>
+</ul>
+
+<h2>3. 보관 장소</h2>
+<p>기록은 먼저 이용자의 기기에 저장됩니다. 서버 연결이 설정된 경우
+Google Cloud의 Firebase Firestore(서울 리전, <code>asia-northeast3</code>)에도 저장되어
+같은 동아리 구성원 사이에서 공유됩니다.</p>
+<p>동아리 데이터는 그 동아리에 소속된 계정만 열람할 수 있으며,
+기록·수정은 운영진 권한을 가진 계정만 할 수 있습니다.</p>
+
+<h2>4. 보관 기간과 삭제</h2>
+<ul>
+  <li>동아리 기록은 해당 동아리가 삭제를 요청하기 전까지 보관됩니다.</li>
+  <li>이용자는 앱의 <strong>더보기 &gt; 모든 데이터 삭제</strong>로 자기 기기의 데이터를 지울 수 있습니다.</li>
+  <li>서버에 저장된 자신의 정보를 지우고 싶은 경우, 동아리 운영진 또는 아래 연락처로 요청하면
+      확인 후 삭제합니다.</li>
+  <li>계정을 삭제하면 로그인 식별자와 동아리 연결 정보가 삭제됩니다.
+      다만 이미 치른 경기 기록은 동아리 공동의 기록이므로, 요청 시 이름을 익명으로 바꾸는 방식으로 처리합니다.</li>
+</ul>
+
+<h2>5. 제3자 제공</h2>
+<p>앱은 다음 서비스를 이용합니다. 그 외 어떤 곳에도 정보를 제공하지 않습니다.</p>
+<table>
+  <tr><th>서비스</th><th>제공자</th><th>용도</th></tr>
+  <tr><td>Firebase Firestore</td><td>Google</td><td>동아리 기록 저장 및 기기 간 동기화</td></tr>
+  <tr><td>Firebase Authentication</td><td>Google</td><td>로그인 처리</td></tr>
+  <tr><td>Sign in with Apple</td><td>Apple</td><td>로그인 수단</td></tr>
+</table>
+
+<h2>6. 미성년자</h2>
+<p>앱은 대학 동아리를 대상으로 하며 만 14세 미만을 대상으로 하지 않습니다.</p>
+
+<h2>7. 문의</h2>
+<p>개인정보와 관련한 문의나 삭제 요청은 아래로 보내주세요.</p>
+<p>이메일: <a href="mailto:woo.jihwan@gmail.com">woo.jihwan@gmail.com</a></p>
+
+<h2>8. 변경</h2>
+<p>이 방침이 바뀌면 이 페이지에서 수정일과 함께 알립니다.</p>
+  </section>
+  <footer class="site">
+    <a href="../index.html#rally">← 랠리 안내로 돌아가기</a>
+  </footer>
+</div>
+</body>
+</html>

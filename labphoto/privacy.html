@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>랩포토 개인정보 처리방침</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <div class="brand"><span class="dot">A</span> AIM the SPACE</div>
+  </header>
+  <section class="panel active">
+<h1>랩포토 개인정보 처리방침</h1>
+<p class="updated">최종 수정일: 2026년 11월 25일</p>
+
+<p>랩포토(이하 “앱”)는 현미경 관찰과 반응 결과를 사진으로 기록하고, 레포트에 쓸 수 있는 형태로 내보내는 앱입니다.
+이 문서는 앱이 어떤 정보를 다루고, 어디에 보관하며, 어떻게 지울 수 있는지를 설명합니다.</p>
+
+<div class="highlight">
+  <p style="margin:0"><strong>앱은 어떤 개인정보도 수집하지 않습니다.</strong> 계정도, 로그인도, 광고도, 사용 기록 수집도 없습니다.
+  앱에는 데이터를 외부로 보내는 기능 자체가 들어 있지 않으며, 사진과 기록은 기기 안 앱 전용 저장 공간에만 남습니다.</p>
+</div>
+
+<h2>1. 수집하는 정보</h2>
+<p>없습니다. 앱은 아래 어느 것도 수집·전송·저장하지 않습니다.</p>
+<ul class="clean">
+  <li>이름, 이메일, 전화번호, 학교 등 이용자를 알아볼 수 있는 정보</li>
+  <li>계정·로그인 정보 — 앱에 가입 절차가 없습니다</li>
+  <li>위치 정보</li>
+  <li>기기 식별자, 광고 식별자(IDFA·광고 ID), 사용 기록이나 통계</li>
+  <li>연락처, 캘린더, 마이크, 건강 데이터</li>
+</ul>
+<p>앱에는 네트워크 통신 코드가 없습니다. 안드로이드 버전은 인터넷 권한(<code>INTERNET</code>)조차 요청하지 않습니다.
+외부 분석·광고 SDK를 쓰지 않으며, iOS는 Apple이 제공하는 기본 프레임워크만, 안드로이드는 Google의 AndroidX·CameraX 라이브러리만 사용합니다.</p>
+
+<h2>2. 기기에 저장되는 것</h2>
+<p>기록은 모두 운영체제가 앱별로 분리해 둔 전용 저장 공간에 들어갑니다. 다른 앱은 이 영역을 읽을 수 없습니다.</p>
+<table>
+  <tr><th>항목</th><th>내용</th></tr>
+  <tr><td>사진</td><td>촬영하거나 불러온 사진의 JPEG과 목록에 쓰는 작은 사본</td></tr>
+  <tr><td>실험 기록</td><td>실험 제목·과목·날짜, 시료 이름·배율·염색이나 시약 조건·메모·태그, 사진별 메모</td></tr>
+  <tr><td>촬영 정보</td><td>촬영 시각, 사진의 가로·세로 픽셀 수, 촬영 당시 확대 배율, 반응 시작 후 경과 시간</td></tr>
+  <tr><td>설정</td><td>표기 방식, 접안·대물 배율 목록, 배율별 보정값(실측 또는 추정)</td></tr>
+</table>
+<p>모두 이용자가 직접 적은 실험 내용과 사진이며, 이용자를 식별하기 위한 정보는 포함하지 않습니다.</p>
+
+<h2>3. 사진에 남는 정보</h2>
+<p>앱은 촬영한 사진과 사진 앱에서 불러온 사진을 모두 <strong>새 JPEG으로 다시 인코딩해</strong> 저장합니다.
+그 과정에서 원본의 EXIF 메타데이터가 사라지므로, <strong>원본에 위치 정보(GPS)가 있었더라도 앱에 저장되는 사진과 내보낸 파일에는 남지 않습니다.</strong>
+사진과 함께 기록되는 것은 위 표의 촬영 정보뿐입니다.</p>
+
+<h2>4. 요청하는 권한</h2>
+<table>
+  <tr><th>권한</th><th>쓰이는 때</th></tr>
+  <tr><td>카메라</td><td>촬영 화면에서 현미경 상이나 반응 결과를 직접 찍을 때</td></tr>
+  <tr><td>사진 읽기</td><td>이미 찍어둔 사진을 실험 기록으로 불러올 때. 시스템 사진 선택 화면으로 이용자가 고른 사진만 앱에 전달됩니다</td></tr>
+  <tr><td>사진 추가</td><td>표기를 새긴 사진을 사진 앱(안드로이드는 <code>Pictures/랩포토</code>)에 저장할 때</td></tr>
+</table>
+<p>권한은 그 기능을 쓰는 순간에만 묻고, 거부해도 나머지 기능은 그대로 동작합니다.</p>
+
+<h2>5. 기록이 앱을 떠나는 경우</h2>
+<p>기록이 앱 밖으로 나가는 것은 이용자가 내보내기를 실행할 때뿐이며, 보낼 곳은 항상 이용자가 고릅니다.</p>
+<ul class="clean">
+  <li><b>ZIP 파일</b> — 사진, 캡션 CSV, 읽어보기 파일을 묶어 공유 화면에 올립니다.</li>
+  <li><b>사진 앱 저장</b> — 표기가 들어간 사진을 기기의 사진 앨범에 추가합니다.</li>
+  <li><b>대표 1장 공유</b> — 사진 한 장과 캡션을 공유 화면에 올립니다.</li>
+</ul>
+<p>앱이 스스로 어딘가로 전송하는 경로는 없습니다. 내보낸 파일을 다른 앱이나 서비스로 넘긴 뒤에는 그 앱·서비스의 방침이 적용됩니다.</p>
+
+<h2>6. 운영체제 백업</h2>
+<p>앱 저장 공간은 운영체제의 기기 백업 대상에 포함됩니다. iCloud 백업이나 Google 백업을 켜 두었다면 실험 기록과 사진이 그 백업에 함께 담길 수 있습니다.
+이 백업은 Apple 또는 Google이 이용자 본인의 계정으로 관리하며 개발자는 접근할 수 없고, 기기 설정에서 끌 수 있습니다.</p>
+
+<h2>7. 제3자 제공</h2>
+<p>수집하는 정보가 없으므로 제3자에게 제공하거나 처리를 위탁하는 일도 없습니다. 판매·공유·광고 활용도 없습니다.
+앱 안의 참고 문헌 링크를 누르면 기기의 기본 브라우저가 열리며, 그다음부터는 해당 웹사이트의 방침을 따릅니다.</p>
+
+<h2>8. 보관 기간과 삭제</h2>
+<ul class="clean">
+  <li>기록은 이용자가 지울 때까지 기기에 남습니다.</li>
+  <li>앱 안에서 사진을 버리거나 되살릴 수 있고, 버린 사진을 영구히 지울 수도 있습니다.</li>
+  <li>앱을 삭제하면 저장 공간이 함께 지워집니다. 사진 앱에 따로 저장한 사본과 이미 내보낸 파일은 이용자가 직접 지워야 합니다.</li>
+  <li>개발자가 보관하는 사본은 존재하지 않으므로, 서버에 삭제를 요청할 대상이 없습니다.</li>
+</ul>
+
+<h2>9. 이용자의 권리</h2>
+<p>모든 데이터가 기기 안에 있으므로 열람·수정·삭제를 앱 안에서 직접 할 수 있습니다. 개발자 쪽에 보관된 데이터가 없어 별도의 열람·삭제 요청 절차를 두지 않습니다.</p>
+
+<h2>10. 미성년자</h2>
+<p>앱은 중·고등학생과 대학생의 실험 기록을 염두에 두고 만들었습니다. 나이를 묻지 않고 어떤 개인정보도 수집하지 않으므로, 보호자 동의가 필요한 수집 절차 자체가 없습니다.</p>
+
+<h2>11. 문의</h2>
+<p>개인정보와 관련한 문의는 아래로 보내주세요.</p>
+<p>이메일: <a href="mailto:devforb.haru@gmail.com">devforb.haru@gmail.com</a></p>
+
+<h2>12. 변경</h2>
+<p>이 방침이 바뀌면 이 페이지에서 수정일과 함께 알립니다.</p>
+
+<h2>English summary</h2>
+<p class="muted">LabPhoto collects no personal data. There is no account, no sign-in, no advertising and no analytics, and the app contains no code that sends data anywhere;
+the Android build does not even request the <code>INTERNET</code> permission. Photos and the experiment notes you type stay in the app's own sandboxed storage on your device.
+Every photo — captured or imported — is re-encoded as a new JPEG, so EXIF metadata including any GPS location from an imported original is not kept.
+Camera, photo-library read and photo-library add permissions are requested only at the moment each feature is used.
+Data leaves the app only when you export it (a ZIP, a shared photo, or a copy saved to your albums) and you always choose the destination.
+The app's storage is included in iCloud or Google device backups if you have those enabled; those are held under your own account and the developer cannot access them.
+Nothing is collected, so nothing is shared or sold. Everything can be viewed, edited and deleted in the app, and deleting the app removes it all.
+Questions: <a href="mailto:devforb.haru@gmail.com">devforb.haru@gmail.com</a>.</p>
+  </section>
+  <footer class="site">
+    <a href="../index.html#labphoto">← 랩포토 안내로 돌아가기</a>
+  </footer>
+</div>
+</body>
+</html>

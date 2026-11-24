@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AIM the SPACE — 앱 안내</title>
-<meta name="description" content="하루와 코트노트. 두 앱의 소개, 지원, 개인정보 처리방침.">
-<meta property="og:title" content="AIM the SPACE — 하루 · 코트노트">
-<meta property="og:description" content="하루와 코트노트. 두 앱의 소개, 지원, 개인정보 처리방침.">
+<meta name="description" content="하루, 코트노트, 랩포토. 세 앱의 소개, 지원, 개인정보 처리방침.">
+<meta property="og:title" content="AIM the SPACE — 하루 · 코트노트 · 랩포토">
+<meta property="og:description" content="하루, 코트노트, 랩포토. 세 앱의 소개, 지원, 개인정보 처리방침.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ko_KR">
 <link rel="stylesheet" href="style.css">
@@ -19,6 +19,7 @@
     <nav class="tabs" role="tablist">
       <button role="tab" id="tab-haru"  aria-controls="panel-haru"  aria-selected="false">하루</button>
       <button role="tab" id="tab-rally" aria-controls="panel-rally" aria-selected="false">코트노트</button>
+      <button role="tab" id="tab-labphoto" aria-controls="panel-labphoto" aria-selected="false">랩포토</button>
     </nav>
   </header>
 
@@ -84,6 +85,42 @@
 
     <h2>개인정보</h2>
     <p><a href="rally/privacy.html">코트노트 개인정보 처리방침 →</a></p>
+  </section>
+
+
+  <!-- 랩포토 -->
+  <section class="panel" id="panel-labphoto" role="tabpanel" aria-labelledby="tab-labphoto">
+    <span class="pill">과학 · 기록</span>
+    <h1>랩포토</h1>
+    <p class="lede">현미경으로 본 것과 반응 결과를, 레포트에 바로 쓸 수 있는 형태로.<br>
+      배율 대신 사진마다 맞는 스케일 바를 남깁니다.</p>
+
+    <div class="grid">
+      <div class="card feat"><b>맞는 스케일 바</b><p>배율마다 눈금을 한 번만 재 두면, 그 배율로 찍는 모든 사진에 실제 길이에 맞는 바가 새겨집니다. 아직 재지 않은 배율은 ≈ 로 추정값임을 밝힙니다.</p></div>
+      <div class="card feat"><b>찍으면서 기록</b><p>시료 이름, 대물·접안 배율, 염색과 시약 조건, 메모와 태그를 사진과 함께. 반응 모드에서는 시작 후 경과 시간까지 자동으로.</p></div>
+      <div class="card feat"><b>쓸 사진만</b><p>전체·남긴 사진·버린 사진으로 나눠 보고, 길게 눌러 버리거나 되살립니다. 시료마다 대표 한 장을 정할 수 있습니다.</p></div>
+      <div class="card feat"><b>레포트로 바로</b><p>한 번 누르면 그림 번호가 붙은 사진과 캡션 CSV가 ZIP으로 묶입니다. 표기 방식·위치·색·크기는 내보낼 때 고릅니다.</p></div>
+    </div>
+
+    <h2>지원</h2>
+    <div class="card">
+      <p style="margin-top:0">문의나 버그 제보는 아래로 보내주세요. 보통 2~3일 안에 답장드립니다.</p>
+      <p style="margin-bottom:0"><a href="mailto:devforb.haru@gmail.com">devforb.haru@gmail.com</a></p>
+    </div>
+
+    <h3>자주 묻는 것</h3>
+    <ul class="clean">
+      <li><b>스케일 바 앞에 ≈ 가 붙어요.</b> 그 배율을 아직 실측하지 않아 시야수(FN)로 계산한 추정값이라는 표시입니다. 보정 탭에서 마이크로미터 슬라이드를 한 번 재면 실측값으로 바뀝니다.</li>
+      <li><b>보정은 어떻게 하나요?</b> 보정 탭에서 배율을 고르고, 눈금을 찍은 사진에서 두 눈금 사이를 집어 그 거리가 몇 µm인지 넣으면 됩니다. 배율마다 한 번이면 됩니다.</li>
+      <li><b>셔터가 눌리지 않아요.</b> 카메라를 쓸 수 없는 상태면 셔터가 흐려집니다. 설정에서 랩포토의 카메라 권한을 확인해주세요. 다른 앱이 카메라를 쓰는 중이거나 기기가 뜨거워도 잠시 멈출 수 있습니다.</li>
+      <li><b>원본은 그대로 두고 표기만 바꿀 수 있나요?</b> 표기는 내보낼 때만 새겨지고 앱에 저장된 사진은 손대지 않습니다. 같은 사진을 방식만 바꿔 몇 번이든 다시 내보낼 수 있습니다.</li>
+      <li><b>버린 사진을 되살리고 싶어요.</b> 검토 탭에서 ‘버린 사진’ 필터를 고른 뒤 썸네일을 길게 누르면 됩니다. 영구 삭제 전까지는 남아 있습니다.</li>
+      <li><b>다른 기기로 옮기려면?</b> 동기화 기능은 없습니다. 내보내기로 ZIP을 만들어 옮기면 사진과 캡션이 함께 남습니다.</li>
+    </ul>
+
+    <h2>개인정보</h2>
+    <p>앱은 어떤 정보도 수집하지 않고, 사진과 기록은 기기 안에만 저장됩니다.</p>
+    <p><a href="labphoto/privacy.html">랩포토 개인정보 처리방침 →</a></p>
   </section>
 
   <footer class="site">
